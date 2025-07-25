@@ -23,6 +23,9 @@ const userRouter=require("./routes/user.js");
 
 // const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
 
+app.get("/",(req,res)=>{
+  res.redirect("/listings");
+});
 
 main()
   .then(() => {
